@@ -6,13 +6,16 @@ public:
         int sum = 0;
         int ans = INT_MAX;
         for (int r = 0; r < n; r++) {
-            sum += nums[r];
+            sum = sum + nums[r];
             while (sum >= target) {
                 ans = min(ans, r - l + 1);
-                sum -= nums[l];
+                sum = sum - nums[l];
                 l++;
             }
         }
-        return ans == INT_MAX ? 0 : ans;
+      if (ans==INT_MAX){
+        return 0;
+      }
+      return ans;
     }
 };
