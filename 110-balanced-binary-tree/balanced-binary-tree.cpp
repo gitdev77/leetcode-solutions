@@ -22,11 +22,7 @@ int solve(TreeNode* node){
 }
     bool isBalanced(TreeNode* root) {
      
-   if(solve(root)!= -1){
-    return true;
-    }
-   else{ return false;
-   }
+   return solve(root) != -1;
 }
     
 };
