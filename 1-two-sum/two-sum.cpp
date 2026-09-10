@@ -5,13 +5,12 @@ public:
         int req;
         for (int i = 0; i < nums.size(); i++){
               req = target - nums[i];
-             if (mp.find(req) != mp.end()){
-                
+             if (mp.find(req) != mp.end()){    
            return {mp[req], i};
         }
-         mp[nums[i]] = i;
+         
+        mp[nums[i]]=i;
         }
-        return {};
+        return vector<int> ();
     }
-    
 };
