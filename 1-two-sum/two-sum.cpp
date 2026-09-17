@@ -11,6 +11,9 @@ public:
          
         mp[nums[i]]=i;
         }
+        
+        
+        
         return vector<int> ();
     }
 };
