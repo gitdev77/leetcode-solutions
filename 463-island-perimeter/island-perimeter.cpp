@@ -12,10 +12,10 @@ public:
             land++;
            
             if(j+1< n && grid[i][j+1] == 1){
-                shared++;
+                shared++;// col
             }
             if(i+1< m && grid[i+1][j]==1){
-                shared++;
+                shared++; // row
             }
             perimeter = 4 * (land) - 2 * (shared);
             }
